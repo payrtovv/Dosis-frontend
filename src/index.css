@@ -1,0 +1,21 @@
+  :root {
+    --color-primary: #388E3C;     
+    --color-secondary: #00796B;   
+    --color-accent: #8BC34A;      
+    --color-bg: #F1F8E9;          
+    --color-text: #212121;        
+
+    --color-white: #ffffff;
+    --color-error: #D32F2F;
+    --color-success: #388E3C;
+
+    --font-main: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  }
+
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    color: var(--color-text);
+    background: var(--color-bg);
+}

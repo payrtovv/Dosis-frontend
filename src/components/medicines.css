@@ -1,0 +1,109 @@
+.medicines {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 60px;
+}
+
+.medicine-form,
+.medicine-item {
+    background: var(--color-white);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.medicine-form {
+    padding: 24px;
+    align-self: start;
+}
+
+.medicine-form h3 {
+    margin: 0 0 18px;
+}
+
+.field select,
+.field textarea {
+    padding: 12px 14px;
+    font-size: 1rem;
+    font-family: inherit;
+    border: 1.5px solid #d1d5db;
+    border-radius: 10px;
+    outline: none;
+}
+
+.field select:focus,
+.field textarea:focus {
+    border-color: var(--color-secondary);
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-cancel {
+    padding: 13px 18px;
+    font-weight: 600;
+    color: var(--color-text);
+    background: transparent;
+    border: 1.5px solid #d1d5db;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.medicine-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.medicine-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+}
+
+.medicine-item h4 {
+    margin: 0 0 4px;
+}
+
+.medicine-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+.item-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-edit,
+.btn-delete {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    background: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-edit {
+    color: var(--color-secondary);
+    border: 1.5px solid var(--color-secondary);
+}
+
+.btn-delete {
+    color: var(--color-primary);
+    border: 1.5px solid var(--color-primary);
+}
+
+@media (max-width: 800px) {
+    .medicines {
+        grid-template-columns: 1fr;
+    }
+}
