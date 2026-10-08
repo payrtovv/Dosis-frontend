@@ -1,109 +1,170 @@
 .medicines {
-    display: grid;
-    grid-template-columns: 1fr 1.4fr;
-    gap: 24px;
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: left;
-    margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 60px;
 }
 
 .medicine-form,
 .medicine-item {
-    background: var(--color-white);
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background: var(--color-white);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .medicine-form {
-    padding: 24px;
-    align-self: start;
+  padding: 24px;
+  align-self: start;
 }
 
 .medicine-form h3 {
-    margin: 0 0 18px;
+  margin: 0 0 18px;
 }
 
 .field select,
 .field textarea {
-    padding: 12px 14px;
-    font-size: 1rem;
-    font-family: inherit;
-    border: 1.5px solid #d1d5db;
-    border-radius: 10px;
-    outline: none;
+  padding: 12px 14px;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 1.5px solid #d1d5db;
+  border-radius: 10px;
+  outline: none;
 }
 
 .field select:focus,
 .field textarea:focus {
-    border-color: var(--color-secondary);
+  border-color: var(--color-secondary);
 }
 
 .form-actions {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .btn-cancel {
-    padding: 13px 18px;
-    font-weight: 600;
-    color: var(--color-text);
-    background: transparent;
-    border: 1.5px solid #d1d5db;
-    border-radius: 10px;
-    cursor: pointer;
+  padding: 13px 18px;
+  font-weight: 600;
+  color: var(--color-text);
+  background: transparent;
+  border: 1.5px solid #d1d5db;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .medicine-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .medicine-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
 }
 
 .medicine-item h4 {
-    margin: 0 0 4px;
+  margin: 0 0 4px;
 }
 
 .medicine-item p {
-    margin: 0;
-    font-size: 0.9rem;
-    color: #6b7280;
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6b7280;
 }
 
 .item-actions {
-    display: flex;
-    gap: 8px;
+  display: flex;
+  gap: 8px;
 }
 
 .btn-edit,
 .btn-delete {
-    padding: 8px 14px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    background: transparent;
-    border-radius: 8px;
-    cursor: pointer;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .btn-edit {
-    color: var(--color-secondary);
-    border: 1.5px solid var(--color-secondary);
+  color: var(--color-secondary);
+  border: 1.5px solid var(--color-secondary);
 }
 
 .btn-delete {
-    color: var(--color-primary);
-    border: 1.5px solid var(--color-primary);
+  color: var(--color-primary);
+  border: 1.5px solid var(--color-primary);
 }
 
 @media (max-width: 800px) {
-    .medicines {
-        grid-template-columns: 1fr;
-    }
+  .medicines {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Fondo oscuro que cubre toda la pantalla */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Oscurece el contenido de atrás */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Asegura que flotante encima de todo */
+  backdrop-filter: blur(2px); /* Opcional: desenfoca ligeramente el fondo */
+}
+
+/* Caja del Modal (Pop-up) */
+.modal-content {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.2s ease-out; /* Animación suave de aparición */
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #333333;
+}
+
+.modal-content p {
+  margin: 8px 0;
+  color: #555555;
+}
+
+/* Botón de cerrar */
+.modal-close-btn {
+  margin-top: 16px;
+  padding: 8px 16px;
+  color: var(--color-primary);
+  border: 1.5px solid var(--color-primary);
+  font-weight: 600;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Animación opcional para la entrada del pop-up */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
