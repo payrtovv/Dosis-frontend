@@ -24,7 +24,6 @@
 * [API](#api)
 * [Tecnologías utilizadas](#tecnologías-utilizadas)
 * [Personas contribuyentes](#personas-contribuyentes)
-* [Autores](#autores)
 
 
 ## Descripción del proyecto
@@ -45,16 +44,6 @@ El backend expone una API REST con Django REST Framework y autenticación por to
   - `Aislamiento por usuario`: cada persona solo accede a sus propios medicamentos.
 - `Cierre de sesión`: elimina los tokens del navegador y vuelve al login.
 
-## Acceso al proyecto
-
-Clona el repositorio:
-
-```bash
-git clone https://github.com/TU_USUARIO/TU_REPOSITORIO.git
-cd TU_REPOSITORIO
-```
-
-## Abre y ejecuta el proyecto
 
 ### Requisitos previos
 
