@@ -18,7 +18,6 @@
 * [Descripción del proyecto](#descripción-del-proyecto)
 * [Estado del proyecto](#estado-del-proyecto)
 * [Funcionalidades](#funcionalidades)
-* [Acceso al proyecto](#acceso-al-proyecto)
 * [API](#api)
 * [Tecnologías utilizadas](#tecnologías-utilizadas)
 
