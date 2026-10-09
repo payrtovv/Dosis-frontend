@@ -18,12 +18,10 @@
 * [Descripción del proyecto](#descripción-del-proyecto)
 * [Estado del proyecto](#estado-del-proyecto)
 * [Funcionalidades](#funcionalidades)
-* [Capturas de pantalla](#capturas-de-pantalla)
 * [Acceso al proyecto](#acceso-al-proyecto)
-* [Abre y ejecuta el proyecto](#abre-y-ejecuta-el-proyecto)
 * [API](#api)
 * [Tecnologías utilizadas](#tecnologías-utilizadas)
-* [Personas contribuyentes](#personas-contribuyentes)
+
 
 
 ## Descripción del proyecto
@@ -51,7 +49,6 @@ El backend expone una API REST con Django REST Framework y autenticación por to
 - Node.js 18 o superior
 - `pip` y `npm`
 
-> Ajusta los nombres de las carpetas (`backend/`, `frontend/`) a los de tu repositorio.
 
 ### 1. Backend (Django)
 
@@ -74,12 +71,6 @@ python manage.py runserver
 ```
 
 El backend queda disponible en `http://127.0.0.1:8000/`.
-
-Opcionalmente, crea un superusuario para entrar al panel de administración (`/admin/`):
-
-```bash
-python manage.py createsuperuser
-```
 
 ### 2. Frontend (React + Vite)
 
