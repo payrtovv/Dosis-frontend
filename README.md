@@ -11,7 +11,6 @@
   <img src="https://img.shields.io/badge/Django-REST%20Framework-092E20?logo=django&logoColor=white" alt="Django REST Framework">
   <img src="https://img.shields.io/badge/React-Vite-61DAFB?logo=react&logoColor=black" alt="React con Vite">
   <img src="https://img.shields.io/badge/Auth-JWT-000000?logo=jsonwebtokens&logoColor=white" alt="Autenticación JWT">
-  <img src="https://img.shields.io/badge/Licencia-MIT-blue" alt="Licencia MIT">
 </p>
 
 ## Índice
@@ -26,7 +25,7 @@
 * [Tecnologías utilizadas](#tecnologías-utilizadas)
 * [Personas contribuyentes](#personas-contribuyentes)
 * [Autores](#autores)
-* [Licencia](#licencia)
+
 
 ## Descripción del proyecto
 
